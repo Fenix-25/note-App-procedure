@@ -5,7 +5,7 @@ function registration( array $data): void
     $confirmPassword = htmlspecialchars($data['confirmPassword']);
     emailDuplicate($data['email']);
     pwdCheck($password, $confirmPassword);
-    $user = PDO_Connect::connect()->prepare("insert into note.users(name, password, email) values (:name, :password,:email)");
+    $user = PDO_Connect::connect()->prepare("insert into users(name, password, email) values (:name, :password,:email)");
     $user->execute([
         ':name' => htmlspecialchars($data['name']),
         ':email' => htmlspecialchars($data['email']),
