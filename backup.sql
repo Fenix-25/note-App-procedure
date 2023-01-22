@@ -52,11 +52,11 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Dumping data for table notes.users: ~4 rows (approximately)
 DELETE FROM `users`;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` (`id`, `name`, `password`, `email`, `role`) VALUES
-	(5, 'Serhii', '$2y$10$cOV8lpv1cK568lEkDxlR2uuzZ4wMKDFM7yi8Q/CEF5pArXUT36Qie', 'bisi@gmail.com', 0),
-	(6, 'Ð¢ÐµÑ‚ÑÐ½Ð°', '$2y$10$AYh6TQBzi5E4fcHJVfQMSOwnSZBBwf/fjz/p1Bg433zGEWkohZfma', 'se@gmail.com', 0),
-	(7, 'test', '$2y$10$6VvtXvJZAmAFpzdjwGArzOluL6FB/rolz3VCSI5uJDbwYM4HdXaGy', 'tester3@test.com', 0),
-	(24, 'Sergii', '$2y$10$sHOKx.P2/1a7pu.jW3Ld2udmc7CqIBEN/K1P3pK6uvRzlZ9iUWFdC', 'tester4@test.com', 0);
+INSERT INTO `users` (`id`, `name`, `password`, `email`) VALUES
+	(5, 'Serhii', '$2y$10$cOV8lpv1cK568lEkDxlR2uuzZ4wMKDFM7yi8Q/CEF5pArXUT36Qie', 'bisi@gmail.com'),
+	(6, 'Ð¢ÐµÑ‚ÑÐ½Ð°', '$2y$10$AYh6TQBzi5E4fcHJVfQMSOwnSZBBwf/fjz/p1Bg433zGEWkohZfma', 'se@gmail.com'),
+	(7, 'test', '$2y$10$6VvtXvJZAmAFpzdjwGArzOluL6FB/rolz3VCSI5uJDbwYM4HdXaGy', 'tester3@test.com'),
+	(24, 'Sergii', '$2y$10$sHOKx.P2/1a7pu.jW3Ld2udmc7CqIBEN/K1P3pK6uvRzlZ9iUWFdC', 'tester4@test.com');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
